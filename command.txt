@@ -1,0 +1,6 @@
+cmake -G "MinGW Makefiles" ..\source\
+cmake --build .
+cmake -GNinja -D CMAKE_CXX_COMPILER=cl ..\source\
+cmake -GNinja ..\source\
+cmake -G"MinGW Makefiles" -D CMAKE_CXX_COMPILER=clang++ ..\source\
+cmake --build . --target logger
